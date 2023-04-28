@@ -8,7 +8,31 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <!-- <include src="./partials/example.html"></include> -->
+    <div class="container">
+      <div class="info">
+        <div class="title">
+          <span class="win-text">Win an</span>
+          <img width="100" src="./images/dyson.png" alt="dyson logo" />
+        </div>
+        <p class="text">
+          Congrats! You are on the way to win a brand new Dyson V15 Detect
+          Absolute! Kindly enter your information, starting for you email:
+        </p>
+        <div class="timer">
+          <div class="timer__items">
+            <div class="timer__item timer__days">00</div>
+            <div class="timer__item timer__hours">00</div>
+            <div class="timer__item timer__minutes">00</div>
+            <div class="timer__item timer__seconds">00</div>
+          </div>
+        </div>
+        <form class="form" autocomplete="off">
+          <label for="email">Please fill in your email adress</label><br />
+          <input type="email" name="email" placeholder="Your Email" /><br />
+          <button type="submit">Continue 100% FREE</button>
+        </form>
+      </div>
+      <img class="cleaner-img" src="./images/01.png" alt="dyson cleaner" />
+    </div>
   </body>
 </html>
