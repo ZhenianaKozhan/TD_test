@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const deadline = new Date(
     new Date().getFullYear(),
     new Date().getMonth() + 1,
-    01
+    1
   );
 
   let timerId = null;
