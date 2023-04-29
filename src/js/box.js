@@ -28,23 +28,3 @@ quizForm.addEventListener('submit', e => {
 
   box3.classList.add('opened');
 });
-
-// function openBox() {
-//   // Закрываем другие коробки и открываем только выбранную
-//   boxes.forEach(box => {
-//     if (box !== this) {
-//       box.style.opacity = '0.5';
-//       box.removeEventListener('click', openBox);
-//     } else {
-//       box.style.transform = 'rotateY(180deg)';
-//       box.style.backgroundImage = "url('../images/prize.png')";
-//       box.removeEventListener('click', openBox);
-//       box.classList.add('prize-box');
-//       setTimeout(() => {
-//         alert('Поздравляем! Вы выиграли пылесос Dyson!');
-//         location.reload();
-//       }, 1000);
-//     }
-//   });
-// }
-
