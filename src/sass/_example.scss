@@ -5,94 +5,90 @@
 
   background: linear-gradient(to bottom, #f6f6f6 50%, #fff);
   position: relative;
-  // background-image: url('../images/background.img.jpg');
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
 
-.cleaner-img {
-  position: absolute;
-  height: 100%;
-  animation: move 2s ease-in-out infinite;
-}
-
-@keyframes move {
-  0% {
-    right: -80px;
+  .cleaner-img {
+    position: absolute;
+    height: 100%;
+    animation: move 2s ease-in-out infinite;
   }
 
-  50% {
-    right: -40px;
-  }
+  @keyframes move {
+    0% {
+      right: -80px;
+    }
 
-  100% {
-    right: -80px;
-  }
-}
+    50% {
+      right: -40px;
+    }
 
-.info {
-  position: absolute;
-  width: 50%;
-  left: 100px;
-  top: 50px;
-
-  .title {
-    padding-left: 100px;
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-
-    .win-text {
-      font-size: x-large;
-      font-weight: 700;
+    100% {
+      right: -80px;
     }
   }
 
-  .text {
-    margin-bottom: 20px;
-    color: #02026b;
-    text-align: center;
-    line-height: 1.1;
-  }
+  .info {
+    position: absolute;
+    width: 50%;
+    left: 100px;
+    top: 50px;
 
-  .form {
-    margin-top: 30px;
-    font-size: small;
-
-    input {
-      margin-top: 10px;
+    .title {
+      padding-left: 100px;
+      display: flex;
+      gap: 8px;
       margin-bottom: 20px;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-      padding: 4px;
-      font-size: 16px;
-      transition: all 0.3s ease;
-      color: #333;
 
-      &:focus {
-        outline: none;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        background-color: #fff;
-        color: #555;
+      .win-text {
+        font-size: x-large;
+        font-weight: 700;
       }
     }
 
-    button {
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-      padding: 10px;
-      background: linear-gradient(to bottom, #515fcf, #02026b);
-      color: #fff;
-      font-size: 16px;
-      cursor: pointer;
-      transition: all 0.3s ease;
+    .text {
+      margin-bottom: 20px;
+      color: #02026b;
+      text-align: center;
+      line-height: 1.1;
+    }
 
-      &:hover {
-        background: linear-gradient(to bottom, #02026b, #515fcf);
+    .form {
+      margin-top: 30px;
+      font-size: small;
+
+      input {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+        padding: 4px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        color: #333;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          background-color: #fff;
+          color: #555;
+        }
+      }
+
+      button {
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        background: linear-gradient(to bottom, #515fcf, #02026b);
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: linear-gradient(to bottom, #02026b, #515fcf);
+        }
       }
     }
   }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="../sass/_exemple2.scss" />
+    <script type="module" src="../js/box.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="prizes">
+        <div class="boxes">
+          <div class="box" id="box1"></div>
+          <div class="box" id="box2"></div>
+          <div class="box" id="box3"></div>
+        </div>
+        <!-- <div class="timer">
+          <div class="timer__items">
+            <div class="timer__item timer__days">00</div>
+            <div class="timer__item timer__hours">00</div>
+            <div class="timer__item timer__minutes">00</div>
+            <div class="timer__item timer__seconds">00</div>
+          </div> -->
+        </div>
+      </section>
+      <img
+        class="smears"
+        width="700"
+        src="../images/back5.svg"
+        alt="background"
+      />
+      <div class="conditions">
+        <h1>Dyson vacuum cleaner giveaway</h1>
+        <p>
+          Take part in our promotion and win the magical Dyson vacuum cleaner.
+          Simply enter your details and open 3 boxes to reveal your prize.
+        </p>
+      </div>
+      <section id="questions">
+        <!-- <h2>Ответьте на три вопроса:</h2> -->
+        <form id="quiz">
+          <div class="input-thumb">
+            <label for="name"> Name</label>
+            <input type="text" id="name" name="name" required />
+            <button type="button" id="submit-btn1">OPEN BOX</button>
+          </div>
+          <div class="input-thumb2">
+            <label for="age"> Age</label>
+            <input type="number" id="age" name="age" required />
+            <button type="button" id="submit-btn2">OPEN BOX</button>
+          </div>
+          <div class="input-thumb3">
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email" required />
+            <button type="submit" id="submit-btn3">OPEN BOX</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="../js/timer.js"></script>
+  </body>
+</html>
