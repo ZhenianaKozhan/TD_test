@@ -12,13 +12,13 @@ quizForm.addEventListener('click', e => {
   if (e.target.id === 'submit-btn1') {
     e.target.previousElementSibling.value.length !== 0
       ? box1.classList.add('opened')
-      : alert('Дайте відповідь на перше питання');
+      : alert('Answer the first question!');
   }
 
   if (e.target.id === 'submit-btn2') {
     e.target.previousElementSibling.value.length !== 0
       ? box2.classList.add('opened')
-      : alert('Дайте відповідь на друге питання');
+      : alert('Answer the second question!');
   }
 });
 
