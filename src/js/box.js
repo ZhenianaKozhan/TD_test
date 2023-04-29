@@ -29,6 +29,7 @@ quizForm.addEventListener('submit', e => {
   const age = quizForm.elements.age.value;
   console.log({ name: name, email: email, age: age });
 
+  box3.classList.add('opened');
   box3.classList.add('hidden');
   dyson.classList.add('show');
   conditions.style.opacity = 0;
