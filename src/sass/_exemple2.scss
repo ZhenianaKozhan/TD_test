@@ -61,20 +61,15 @@ button {
   border: none;
   border-radius: 15px;
   cursor: pointer;
-}
 
-button:hover {
-  background-color: #ce1110;
+  &:hover {
+    background-color: #ce1110;
+  }
 }
 
 #prizes {
   margin-top: 6%;
   margin-bottom: 4rem;
-}
-
-#prizes h2 {
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
 }
 
 .boxes {
@@ -92,14 +87,14 @@ button:hover {
   background-position: center;
   cursor: pointer;
   transition: transform 0.3s ease;
-}
 
-.box:hover {
-  transform: scale(1.1);
-}
+  &:hover {
+    transform: scale(1.1);
+  }
 
-.box.opened {
-  background-image: url('../images/opened.png');
+  &.opened {
+    background-image: url('../images/opened.png');
+  }
 }
 
 .smears {
@@ -109,7 +104,8 @@ button:hover {
   bottom: -120px;
 }
 
-.conditions {
+.conditions,
+.won {
   width: 400px;
   position: absolute;
   bottom: 50px;
@@ -125,22 +121,34 @@ button:hover {
   text-align: center;
 }
 
-.input-thumb2 {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.input-thumb3 {
-  display: flex;
-  text-align: center;
-  gap: 30px;
-  margin-bottom: 20px;
-  // margin-left: 100px;
-}
-
 @font-face {
   font-family: 'Bauhaus 93';
   src: url('../fonts/Bauhaus\ 93\ Regular.ttf');
+}
+
+.dyson {
+  position: absolute;
+  right: -100%;
+  top: 10%;
+
+  &.show {
+    animation: slide-in 2s forwards;
+  }
+}
+
+@keyframes slide-in {
+  100% {
+    right: 9%;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s;
+  transition-delay: 1s;
+}
+
+.won-text {
+  color: #ce1110;
+  margin-bottom: 100px;
 }

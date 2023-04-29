@@ -4,6 +4,9 @@ const mailBtn = document.getElementById('submit-btn2');
 const box1 = document.getElementById('box1');
 const box2 = document.getElementById('box2');
 const box3 = document.getElementById('box3');
+const dyson = document.querySelector('.dyson');
+const conditions = document.querySelector('.conditions');
+const wonText = document.querySelector('.won');
 
 quizForm.addEventListener('click', e => {
   if (e.target.id === 'submit-btn1') {
@@ -26,5 +29,8 @@ quizForm.addEventListener('submit', e => {
   const age = quizForm.elements.age.value;
   console.log({ name: name, email: email, age: age });
 
-  box3.classList.add('opened');
+  box3.classList.add('hidden');
+  dyson.classList.add('show');
+  conditions.style.opacity = 0;
+  wonText.style.opacity = 1;
 });
